@@ -211,12 +211,12 @@ export default function Home() {
 
       </section>
 
-      <section id="contatos" className="md:px-0 px-2 text-white flex flex-col items-center justify-center gap-3">  
+      <section id="contatos" className="md:px-0 px-2  text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className="text-4xl font-bold">
             contatos
           </h1>
 
-          <ul>
+          <ul className="flex flex-col items-center justify-center gap-2 pb-10">
           <li>
             <Link href="https://wa.me/+5588996704089" className="flex items-center gap-1">
               <Image alt="WhatsApp" src={"/whatsapp.svg"} width={20} height={20}/>
