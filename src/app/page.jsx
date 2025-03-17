@@ -67,7 +67,7 @@ export default function Home() {
           </h1>
 
           <p className="md:w-[500px]  w-[300px]">
-            Sou desenvolvedor front-end, especializado em JavaScript e Next.js, com experiência na criação de interfaces interativas e responsivas. Além disso, atuei nos setores de bares e restaurantes, alimentação saudável e moda fitness, unindo tecnologia e inovação para atender às necessidades dos clientes. Busco constantemente novos desafios para expandir meu conhecimento e contribuir para o sucesso dos projetos em que atuo.
+            Sou desenvolvedor front-end, com foco em JavaScript e Next.js, com experiência na criação de interfaces interativas e responsivas. Além disso, atuei nos setores de bares e restaurantes, alimentação saudável e moda fitness, unindo tecnologia e inovação para atender às necessidades dos clientes. Busco constantemente novos desafios para expandir meu conhecimento e contribuir para o sucesso dos projetos em que atuo.
           </p>
 
           <h2 className="text-4xl font-bold flex items-center justify-center">
