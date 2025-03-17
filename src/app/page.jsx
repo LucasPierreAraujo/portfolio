@@ -218,7 +218,7 @@ export default function Home() {
 
           <ul>
           <li>
-            <Link href="https://wa.me/<88996704089>" className="flex items-center gap-1">
+            <Link href="https://wa.me/+5588996704089" className="flex items-center gap-1">
               <Image alt="WhatsApp" src={"/whatsapp.svg"} width={20} height={20}/>
               WhatsApp: (88)99670-4089
             </Link>
