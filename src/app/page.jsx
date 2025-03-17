@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="min-h-screen flex flex-col items-center justify-center gap-4 text-white">  
+      <section className="md:px-0 px-2 min-h-screen flex flex-col items-center justify-center gap-4 text-white">  
         <Image 
           alt="perfil" 
           src="/eu.jpeg" 
@@ -51,7 +51,7 @@ export default function Home() {
 
         </div>
 
-        <p className="w-[500px] text-center">
+        <p className="md:w-[500px]  w-[300px] text-center">
           Desenvolvedor web, com experiência em Next.js, JavaScript, machine learning e empreendedorismo.
         </p>
 
@@ -61,12 +61,12 @@ export default function Home() {
 
       </section>
 
-      <section id="sobre" className="min-h-screen pt-20 text-white flex flex-col items-center justify-center gap-5">  
+      <section id="sobre" className="md:px-0 px-2 min-h-screen pt-20 text-white flex flex-col items-center justify-center gap-5">  
        		<h1 className="text-4xl font-bold">
             sobre
           </h1>
 
-          <p className="w-[500px]">
+          <p className="md:w-[500px]  w-[300px]">
             Sou desenvolvedor front-end, especializado em JavaScript e Next.js, com experiência na criação de interfaces interativas e responsivas. Além disso, atuei nos setores de bares e restaurantes, alimentação saudável e moda fitness, unindo tecnologia e inovação para atender às necessidades dos clientes. Busco constantemente novos desafios para expandir meu conhecimento e contribuir para o sucesso dos projetos em que atuo.
           </p>
 
@@ -74,27 +74,27 @@ export default function Home() {
             Experiências
           </h2>
 
-          <h3 className="text-2xl font-bold w-[500px]">
+          <h3 className="text-2xl font-bold md:w-[500px]  w-[300px]">
           Desenvolvedor Front-End:
           </h3>
 
-          <p className="w-[500px]">
+          <p className="md:w-[500px]  w-[300px]">
             Atualmente, trabalho com JavaScript e Next.js, desenvolvendo interfaces interativas e responsivas para aplicações web. Tenho experiência em criar soluções que atendem às necessidades dos usuários, com foco na usabilidade e performance.
           </p>
 
-          <h3 className="text-2xl font-bold w-[500px]">
+          <h3 className="text-2xl font-bold md:w-[500px]  w-[300px]">
           Machine Learning e Classificação de Dados:
           </h3>
 
-          <p className="w-[500px]">
+          <p className="md:w-[500px]  w-[300px]">
             Tenho experiência em machine learning, aplicando algoritmos para a classificação de dados e análise preditiva. Utilizo ferramentas e técnicas para resolver problemas complexos, melhorando a precisão e eficiência na análise de grandes volumes de dados.
           </p>
 
-          <h3 className="text-2xl font-bold w-[500px]">
+          <h3 className="text-2xl font-bold md:w-[500px]  w-[300px]">
             Gestor:
           </h3>  
 
-          <p className="w-[500px]">
+          <p className="md:w-[500px]  w-[300px]">
           Gerencio e desenvolvo negócios no ramo de bares e restaurantes, alimentação saudável e moda fitness, sempre buscando integrar as necessidades dos clientes com soluções inovadoras e tecnológicas. Essa experiência me permite aprimorar minhas habilidades como gestor enquanto busco sempre melhorar os produtos e serviços oferecidos.
           </p>
           
@@ -102,7 +102,7 @@ export default function Home() {
               Tecnologias Front-End:
             </h2>
 
-            <ul className="flex items-center  gap-2 w-[500px]">
+            <ul className="flex items-center  gap-2 md:w-[500px]  w-[300px]">
               <li>
                 <Image alt="next" src={"/next.jpeg"} width={200} height={200} />
               </li>
@@ -131,12 +131,12 @@ export default function Home() {
                          
       </section>
 
-      <section id="projetos" className="min-h-screen text-white flex flex-col items-center justify-center gap-3">  
+      <section id="projetos" className=" md:px-0 px-2 min-h-screen text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className=" text-4xl font-bold">
             Projetos
           </h1>
 
-          <ul className="flex flex-wrap items-center gap-4 w-[500px]">
+          <ul className="flex flex-wrap items-center gap-4 md:w-[500px]  w-[300px]">
             <li>
               <Link href={"/iclinica"} className="flex items-center gap-1">
                 <Image alt="iclinica" src={"/iclinica/logo.png"} width={50} height={50}  />
@@ -211,7 +211,7 @@ export default function Home() {
 
       </section>
 
-      <section id="contatos" className="text-white flex flex-col items-center justify-center gap-3">  
+      <section id="contatos" className="md:px-0 px-2 text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className="text-4xl font-bold">
             contatos
           </h1>
