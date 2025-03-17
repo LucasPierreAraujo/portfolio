@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="h-screen flex flex-col items-center justify-center gap-4 text-white">  
+      <section className="min-h-screen flex flex-col items-center justify-center gap-4 text-white">  
         <Image 
           alt="perfil" 
           src="/eu.jpeg" 
@@ -61,7 +61,7 @@ export default function Home() {
 
       </section>
 
-      <section id="sobre" className="h-screen pt-20 text-white flex flex-col items-center justify-center gap-5">  
+      <section id="sobre" className="min-h-screen pt-20 text-white flex flex-col items-center justify-center gap-5">  
        		<h1 className="text-4xl font-bold">
             sobre
           </h1>
@@ -102,7 +102,7 @@ export default function Home() {
               Linguages Front-End:
             </h2>
 
-            <ul>
+            <ul className="flex items-center gap-2">
               <li>
                 <Image alt="next" src={"/next.jpeg"} width={200} height={200} />
               </li>
@@ -114,11 +114,27 @@ export default function Home() {
               <li>
                 <Image alt="typscript" src={"/ts.jpeg"} width={100} height={100} />
               </li>
+
+              <li>
+                <Image alt="vercel" src={"/vercel.jpeg"} width={100} height={100} />
+              </li>
+
+              <li>
+                <Image alt="htl" src={"/html.jpeg"} width={75} height={75} />
+              </li>
+
+              <li>
+                <Image alt="css" src={"/css.jpeg"} width={100} height={100} />
+              </li>
+
+              <li>
+                <Image alt="react" src={"/react.jpeg"} width={100} height={100} />
+              </li>
             </ul>
                          
       </section>
 
-      <section id="projetos" className="h-screen text-white flex flex-col items-center justify-center gap-3">  
+      <section id="projetos" className="min-h-screen text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className=" text-4xl font-bold">
             Projetos
           </h1>
@@ -180,7 +196,7 @@ export default function Home() {
 
       </section>
 
-      <section id="contatos" className="h-screen text-white flex flex-col items-center justify-center gap-3">  
+      <section id="contatos" className="min-h-screen text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className="text-4xl font-bold">
             contatos
           </h1>
