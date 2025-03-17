@@ -99,36 +99,36 @@ export default function Home() {
           </p>
           
             <h2 className="text-4xl font-bold flex items-center justify-center gap-">
-              Linguages Front-End:
+              Tecnologias Front-End:
             </h2>
 
-            <ul className="flex items-center gap-2">
+            <ul className="flex items-center  gap-2 w-[500px]">
               <li>
                 <Image alt="next" src={"/next.jpeg"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="javascript" src={"/js.jpeg"} width={100} height={100} />
+                <Image alt="javascript" src={"/javascript.png"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="typscript" src={"/ts.jpeg"} width={100} height={100} />
+                <Image alt="typscript" src={"/typescript.png"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="vercel" src={"/vercel.jpeg"} width={100} height={100} />
+                <Image alt="react" src={"/react.png"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="htl" src={"/html.jpeg"} width={75} height={75} />
+                <Image alt="html" src={"/html.png"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="css" src={"/css.jpeg"} width={100} height={100} />
+                <Image alt="css" src={"/css-3.png"} width={200} height={200} />
               </li>
 
               <li>
-                <Image alt="react" src={"/react.jpeg"} width={100} height={100} />
+                <Image alt="vercel" src={"/vercel.png"} width={200} height={200} />
               </li>
             </ul>
                          
@@ -192,11 +192,29 @@ export default function Home() {
 
               </Link>
             </li>
+
+            <li>
+              <Link href={"/odontoflow"} className="flex items-center gap-1">
+                <Image alt="gerenciamentotarefas" src={"/gerenciamentotarefas/gc.jpeg"} width={50} height={50}  />
+
+                  <div>
+                  <h1 className="text-white font-bold text-xl">
+                    Gerenciamento de tardefas
+                  </h1>
+
+                  <p className="text-sm text-zinc-300">
+                    Sistema de gerenciamento de tarefas.
+                  </p>
+
+                  </div>
+
+              </Link>
+            </li>
           </ul>
 
       </section>
 
-      <section id="contatos" className="min-h-screen text-white flex flex-col items-center justify-center gap-3">  
+      <section id="contatos" className="text-white flex flex-col items-center justify-center gap-3">  
        		<h1 className="text-4xl font-bold">
             contatos
           </h1>
@@ -229,6 +247,8 @@ export default function Home() {
                 Instagram: lucas_pierre
               </Link>
             </li>
+
+            
           
           </ul>
 
