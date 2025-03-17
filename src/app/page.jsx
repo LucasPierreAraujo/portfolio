@@ -127,9 +127,6 @@ export default function Home() {
                 <Image alt="css" src={"/css-3.png"} width={200} height={200} />
               </li>
 
-              <li>
-                <Image alt="vercel" src={"/vercel.png"} width={200} height={200} />
-              </li>
             </ul>
                          
       </section>
