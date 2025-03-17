@@ -11,7 +11,7 @@ export default function Home() {
       
       <header className="flex items-center w-full justify-between p-4">
 
-        <h1 className="text-3xl text-white">
+        <h1 className="md:text-3xl text-2xl text-white">
           
           Lucas Pierre
 
@@ -41,7 +41,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center gap-1">
 
-          <h1 className="text-4xl font-bold">
+          <h1 className="md:text-4xl text-2xl font-bold">
             Pedro Lucas Araujo Pinho Pierre
           </h1>
 
@@ -98,7 +98,7 @@ export default function Home() {
           Gerencio e desenvolvo negócios no ramo de bares e restaurantes, alimentação saudável e moda fitness, sempre buscando integrar as necessidades dos clientes com soluções inovadoras e tecnológicas. Essa experiência me permite aprimorar minhas habilidades como gestor enquanto busco sempre melhorar os produtos e serviços oferecidos.
           </p>
           
-            <h2 className="text-4xl font-bold flex items-center justify-center gap-">
+            <h2 className="md:text-4xl text-2xl font-bold flex items-center justify-center gap-">
               Tecnologias Front-End:
             </h2>
 
