@@ -26,7 +26,10 @@ export default function Home() {
       </header>
 
         <div className="flex flex-wrap items-center justify-center h-screen gap-2">
+
             <Image  alt="login" src={"/workhub/login.png"} width={600} height={600} />
+
+            <Image  alt="cadastro1" src={"/workhub/cadastro1.jpeg"} width={600} height={600} />
             
         </div>
         
