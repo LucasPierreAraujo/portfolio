@@ -13,7 +13,7 @@ export default function Home() {
 
         <h1 className="md:text-3xl text-2xl text-white">
           
-          Cardapio
+          Fake ou Fato
 
         </h1>
 
@@ -28,11 +28,11 @@ export default function Home() {
 
         <div className="flex flex-wrap items-center justify-center h-screen gap-2">
           
-            <Image  alt="home" src={"/cardapio/home.jpeg"} width={600} height={600} />
+            <Image  alt="home" src={"/fakeoufato/home.jpeg"} width={600} height={600} />
 
-            <Image alt="home1" src={"/cardapio/home1.jpeg"} width={600} height={600} />
+            <Image alt="fato" src={"/fakeoufato/fato.jpeg"} width={600} height={600} />
 
-            <Image alt="home2" src={"/cardapio/home2.jpeg"} width={600} height={600} />
+            <Image alt="fake" src={"/fakeoufato/fake.jpeg"} width={600} height={600} />
             
         </div>
         
