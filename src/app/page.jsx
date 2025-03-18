@@ -139,6 +139,24 @@ export default function Home() {
           <ul className="flex flex-wrap items-center gap-4 md:w-[500px]  w-[300px]">
 
           <li>
+              <Link href={"/workhub"} className="flex items-center gap-1">
+                <Image alt="workhub" src={"/workhub/logo.svg"} width={50} height={50}  />
+
+                  <div>
+                  <h1 className="text-white font-bold text-xl">
+                    Workhub
+                  </h1>
+
+                  <p className="text-sm text-zinc-300">
+                  O WorkHub é uma plataforma inovadora que conecta freelancers a clientes em busca de serviços qualificados.(em construção)
+                  </p>
+
+                  </div>
+
+              </Link>
+            </li>
+
+          <li>
               <Link href={"/cardapio"} className="flex items-center gap-1">
                 <Image alt="cardapio" src={"/cardapio/logo.jpeg"} width={50} height={50}  />
 
