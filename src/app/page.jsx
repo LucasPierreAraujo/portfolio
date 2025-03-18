@@ -137,23 +137,25 @@ export default function Home() {
           </h1>
 
           <ul className="flex flex-wrap items-center gap-4 md:w-[500px]  w-[300px]">
-            <li>
-              <Link href={"/iclinica"} className="flex items-center gap-1">
-                <Image alt="iclinica" src={"/iclinica/logo.png"} width={50} height={50}  />
+
+          <li>
+              <Link href={"/cardapio"} className="flex items-center gap-1">
+                <Image alt="cardapio" src={"/cardapio/logo.jpeg"} width={50} height={50}  />
 
                   <div>
                   <h1 className="text-white font-bold text-xl">
-                    Iclinica
+                    Cardapio
                   </h1>
 
                   <p className="text-sm text-zinc-300">
-                    Sistema de agendamento de pacientes.
+                    Sistema de gerenciamento de pedidos.
                   </p>
 
                   </div>
 
               </Link>
             </li>
+
             <li>
               <Link href={"/odontoflow"} className="flex items-center gap-1">
                 <Image alt="odontoflow" src={"/odontoflow/logo.png"} width={50} height={50}  />
@@ -171,32 +173,32 @@ export default function Home() {
 
               </Link>
             </li>
-
+            
             <li>
-              <Link href={"/odontoflow"} className="flex items-center gap-1">
-                <Image alt="odontoflow" src={"/saladaconceito/logo.jpeg"} width={50} height={50}  />
+              <Link href={"/iclinica"} className="flex items-center gap-1">
+                <Image alt="iclinica" src={"/iclinica/logo.png"} width={50} height={50}  />
 
                   <div>
                   <h1 className="text-white font-bold text-xl">
-                    Salada Conceito
+                    Iclinica
                   </h1>
 
                   <p className="text-sm text-zinc-300">
-                    Sistema de gerenciamento de pedidos.
+                    Sistema de agendamento clinico.
                   </p>
 
                   </div>
 
               </Link>
             </li>
-
+                    
             <li>
-              <Link href={"/odontoflow"} className="flex items-center gap-1">
+              <Link href={"/gerenciamentotarefas"} className="flex items-center gap-1">
                 <Image alt="gerenciamentotarefas" src={"/gerenciamentotarefas/gc.jpeg"} width={50} height={50}  />
 
                   <div>
                   <h1 className="text-white font-bold text-xl">
-                    Gerenciamento de tardefas
+                    Gerenciamento de tarefas
                   </h1>
 
                   <p className="text-sm text-zinc-300">
