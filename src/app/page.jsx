@@ -173,7 +173,25 @@ export default function Home() {
 
               </Link>
             </li>
-            
+
+            <li>
+              <Link href={"/fakeoufato"} className="flex items-center gap-1">
+                <Image alt="fakeoufato" src={"/fakeoufato/logo.jpeg"} width={50} height={50}  />
+
+                  <div>
+                  <h1 className="text-white font-bold text-xl">
+                    Fake ou Fato
+                  </h1>
+
+                  <p className="text-sm text-zinc-300">
+                    Classificação de noticias em fake ou fato.
+                  </p>
+
+                  </div>
+
+              </Link>
+            </li>
+
             <li>
               <Link href={"/iclinica"} className="flex items-center gap-1">
                 <Image alt="iclinica" src={"/iclinica/logo.png"} width={50} height={50}  />
