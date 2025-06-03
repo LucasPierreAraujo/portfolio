@@ -24,19 +24,34 @@ export default function Home() {
             Sobre
           </Link>
 
-          
+          <Link
+            href={"#experiencias"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Experiências
+          </Link>
           <Link
             href={"#tecnologias"}
             className="px-3 py-2 rounded-lg border border-white text-white"
           >
             Tecnologias
           </Link>
-           
+           <Link
+            href={"#certificados"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Certificados
+          </Link>
           
           <Link href={"#projetos"} className="px-3 py-2 rounded-lg border border-white text-white">
             projetos
           </Link>
-           
+           <Link
+            href={"#contatos"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Contatos
+          </Link>
         </div>
       </header>
 
