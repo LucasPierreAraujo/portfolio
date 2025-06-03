@@ -14,127 +14,86 @@ export default function Home() {
       <header className="fixed top-0 z-50 bg-black bg-opacity-70 backdrop-blur flex items-center w-full justify-between p-4">
         <h1 className="md:text-3xl text-2xl text-white">Lucas Pierre</h1>
 
-        <nav className="hidden md:flex items-center gap-3">
-          <Link
-            href="#home"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Home
-          </Link>
-          <Link
-            href="#sobre"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Sobre
-          </Link>
-          <Link
-            href="#experiencias"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Experiências
-          </Link>
-          <Link
-            href="#tecnologias"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Tecnologias
-          </Link>
-          <Link
-            href="#certificados"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Certificados
-          </Link>
-          <Link
-            href="#projetos"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Projetos
-          </Link>
-          <Link
-            href="#contatos"
-            className="px-3 py-2 rounded-lg border border-white text-white"
-          >
-            Contatos
-          </Link>
-        </nav>
-
+        {/* Botão Hamburger (aparece só em telas pequenas) */}
         <button
-          className="md:hidden flex flex-col justify-center items-center gap-1"
           onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex flex-col justify-center items-center gap-1 w-8 h-8"
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform ${
-              menuOpen ? "rotate-45 translate-y-1.5" : ""
+            className={`block h-0.5 w-full bg-white rounded transition-transform duration-300 ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
             }`}
-          ></span>
+          />
           <span
-            className={`block w-6 h-0.5 bg-white transition-opacity ${
+            className={`block h-0.5 w-full bg-white rounded transition-opacity duration-300 ${
               menuOpen ? "opacity-0" : "opacity-100"
             }`}
-          ></span>
+          />
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform ${
-              menuOpen ? "-rotate-45 -translate-y-1.5" : ""
+            className={`block h-0.5 w-full bg-white rounded transition-transform duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
-          ></span>
+          />
         </button>
-      </header>
 
-      {menuOpen && (
-        <nav className="fixed top-[56px] left-0 w-full bg-black bg-opacity-90 backdrop-blur flex flex-col items-center gap-3 p-4 md:hidden z-40">
+        {/* Menu principal */}
+        <nav
+          className={`flex-col md:flex-row md:flex md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-black bg-opacity-90 md:bg-transparent transition-[max-height] duration-300 overflow-hidden md:overflow-visible ${
+            menuOpen ? "max-h-96" : "max-h-0"
+          } md:max-h-full`}
+        >
           <Link
             href="#home"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             href="#sobre"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Sobre
           </Link>
           <Link
             href="#experiencias"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Experiências
           </Link>
           <Link
             href="#tecnologias"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Tecnologias
           </Link>
           <Link
             href="#certificados"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Certificados
           </Link>
           <Link
             href="#projetos"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Projetos
           </Link>
           <Link
             href="#contatos"
-            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            className="block px-3 py-2 rounded-lg border border-white text-white md:inline-block"
             onClick={() => setMenuOpen(false)}
           >
             Contatos
           </Link>
         </nav>
-      )}
+      </header>
 
       <section
         id="home"
