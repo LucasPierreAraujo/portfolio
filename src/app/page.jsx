@@ -1,59 +1,145 @@
-"use client"
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-
-import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-  
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div
       className="h-full w-full bg-cover bg-center"
       style={{ backgroundImage: "url('/fundo.svg')" }}
     >
-      <header className="fixed top-0 z-50 w-full bg-black bg-opacity-70 backdrop-blur p-4">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl text-white">Lucas Pierre</h1>
+      <header className="fixed top-0 z-50 bg-black bg-opacity-70 backdrop-blur flex items-center w-full justify-between p-4">
+        <h1 className="md:text-3xl text-2xl text-white">Lucas Pierre</h1>
 
-        
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
-          aria-label="Toggle Menu"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        
-        <nav className="hidden md:flex gap-4">
-          <Link href="#home" className="px-3 py-2 rounded-lg border border-white text-white">Home</Link>
-          <Link href="#sobre" className="px-3 py-2 rounded-lg border border-white text-white">Sobre</Link>
-          <Link href="#experiencias" className="px-3 py-2 rounded-lg border border-white text-white">Experiências</Link>
-          <Link href="#tecnologias" className="px-3 py-2 rounded-lg border border-white text-white">Tecnologias</Link>
-          <Link href="#certificados" className="px-3 py-2 rounded-lg border border-white text-white">Certificados</Link>
-          <Link href="#projetos" className="px-3 py-2 rounded-lg border border-white text-white">Projetos</Link>
-          <Link href="#contatos" className="px-3 py-2 rounded-lg border border-white text-white">Contatos</Link>
+        <nav className="hidden md:flex items-center gap-3">
+          <Link
+            href="#home"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Home
+          </Link>
+          <Link
+            href="#sobre"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Sobre
+          </Link>
+          <Link
+            href="#experiencias"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Experiências
+          </Link>
+          <Link
+            href="#tecnologias"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Tecnologias
+          </Link>
+          <Link
+            href="#certificados"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Certificados
+          </Link>
+          <Link
+            href="#projetos"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Projetos
+          </Link>
+          <Link
+            href="#contatos"
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Contatos
+          </Link>
         </nav>
-      </div>
 
-      {/* Menu mobile */}
-      {isOpen && (
-        <nav className="flex flex-col gap-2 mt-4 md:hidden">
-          <Link href="#home" className="px-3 py-2 rounded-lg border border-white text-white">Home</Link>
-          <Link href="#sobre" className="px-3 py-2 rounded-lg border border-white text-white">Sobre</Link>
-          <Link href="#experiencias" className="px-3 py-2 rounded-lg border border-white text-white">Experiências</Link>
-          <Link href="#tecnologias" className="px-3 py-2 rounded-lg border border-white text-white">Tecnologias</Link>
-          <Link href="#certificados" className="px-3 py-2 rounded-lg border border-white text-white">Certificados</Link>
-          <Link href="#projetos" className="px-3 py-2 rounded-lg border border-white text-white">Projetos</Link>
-          <Link href="#contatos" className="px-3 py-2 rounded-lg border border-white text-white">Contatos</Link>
+        <button
+          className="md:hidden flex flex-col justify-center items-center gap-1"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`block w-6 h-0.5 bg-white transition-transform ${
+              menuOpen ? "rotate-45 translate-y-1.5" : ""
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 bg-white transition-opacity ${
+              menuOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 bg-white transition-transform ${
+              menuOpen ? "-rotate-45 -translate-y-1.5" : ""
+            }`}
+          ></span>
+        </button>
+      </header>
+
+      {menuOpen && (
+        <nav className="fixed top-[56px] left-0 w-full bg-black bg-opacity-90 backdrop-blur flex flex-col items-center gap-3 p-4 md:hidden z-40">
+          <Link
+            href="#home"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            href="#sobre"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sobre
+          </Link>
+          <Link
+            href="#experiencias"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Experiências
+          </Link>
+          <Link
+            href="#tecnologias"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Tecnologias
+          </Link>
+          <Link
+            href="#certificados"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Certificados
+          </Link>
+          <Link
+            href="#projetos"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Projetos
+          </Link>
+          <Link
+            href="#contatos"
+            className="px-3 py-2 rounded-lg border border-white text-white w-full text-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contatos
+          </Link>
         </nav>
       )}
-    </header>
 
-      <section id="home" className="md:px-0 px-2  min-h-screen flex flex-col items-center justify-center  text-white">
-        
+      <section
+        id="home"
+        className="md:px-0 px-2  min-h-screen flex flex-col items-center justify-center  text-white"
+      >
         <Image
           alt="perfil"
           src="/eu.jpeg"
