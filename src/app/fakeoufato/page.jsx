@@ -25,7 +25,7 @@ export default function Home() {
         id="projetos"
         className=" md:px-0 px-2  h-full text-white flex flex-col items-center justify-center gap-3"
       >
-        <h1 className=" text-4xl font-bold">DESCRIÇÃO</h1>
+        <h1 className=" text-4xl font-bold">Descrição</h1>
 
         <p className="md:w-[500px]  w-[300px]">
           Aplicativo web de verificação de veracidade de informações utilizando
@@ -39,7 +39,7 @@ export default function Home() {
         id="projetos"
         className=" md:px-0 px-2 py-10 h-full text-white flex flex-col items-center justify-center gap-3"
       >
-        <h1 className=" text-4xl font-bold">TÉCNOLOGIAS</h1>
+        <h1 className=" text-4xl font-bold">Tecnologias</h1>
 
         <p className="md:w-[500px]  w-[300px]">
           Python, Flask, Machine Learning.
