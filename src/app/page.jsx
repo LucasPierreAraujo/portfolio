@@ -7,10 +7,16 @@ export default function Home() {
       className="h-full w-full bg-cover bg-center"
       style={{ backgroundImage: "url('/fundo.svg')" }}
     >
-      <header className="flex items-center w-full justify-between p-4">
+      <header className="fixed top-0 z-50 bg-black bg-opacity-70 backdrop-blur flex items-center w-full justify-between p-4">
         <h1 className="md:text-3xl text-2xl text-white">Lucas Pierre</h1>
 
         <div className="flex items-center gap-3">
+          <Link
+            href={"#home"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Home
+          </Link>
           <Link
             href={"#sobre"}
             className="px-3 py-2 rounded-lg border border-white text-white"
@@ -18,13 +24,39 @@ export default function Home() {
             Sobre
           </Link>
 
-          <Link href={"#projetos"} className="px-3 py-2 rounded-lg bg-white">
+          <Link
+            href={"#experiencias"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Experiências
+          </Link>
+          <Link
+            href={"#tecnologias"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Tecnologias
+          </Link>
+           <Link
+            href={"#certificados"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Certificados
+          </Link>
+          
+          <Link href={"#projetos"} className="px-3 py-2 rounded-lg border border-white text-white">
             projetos
+          </Link>
+           <Link
+            href={"#contatos"}
+            className="px-3 py-2 rounded-lg border border-white text-white"
+          >
+            Contatos
           </Link>
         </div>
       </header>
 
-      <section className="md:px-0 px-2  min-h-screen flex flex-col items-center justify-center  text-white">
+      <section id="home" className="md:px-0 px-2  min-h-screen flex flex-col items-center justify-center  text-white">
+        
         <Image
           alt="perfil"
           src="/eu.jpeg"
@@ -58,7 +90,7 @@ export default function Home() {
       <div className="w-full h-full flex flex-col justify-center items-center gap-10">
         <section
           id="sobre"
-          className="md:px-0 px-2  h-full text-white flex flex-col items-center justify-center gap-5"
+          className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
         >
           <h1 className="text-4xl font-bold">sobre</h1>
 
@@ -73,7 +105,7 @@ export default function Home() {
           </p>
           <section
             id="experiencias"
-            className="md:px-0 px-2 mt-10 h-full text-white flex flex-col items-center justify-center gap-3"
+            className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
           >
             <h2 className="text-4xl font-bold flex items-center justify-center">
               Experiências
@@ -118,7 +150,7 @@ export default function Home() {
 
         <section
           id="tecnologias"
-          className=" md:px-0 px-2 h-full mt-5 text-white flex flex-col items-center justify-center gap-3"
+          className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
         >
           <h2 className="md:text-4xl text-2xl font-bold flex items-center justify-center gap-">
             Tecnologias Front-End:
@@ -163,58 +195,42 @@ export default function Home() {
 
         <section
           id="certificados"
-          className=" md:px-0 px-2 mt-5 h-full text-white flex flex-col items-center justify-center gap-3"
+          className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
         >
           <h1 className=" text-4xl font-bold">Certificados</h1>
 
           <ul className="flex flex-col gap-4 md:w-[500px]  w-[300px]">
-            
-
             <li>
               <Link href={"/cursos"} className="flex items-center gap-1">
-                
-
                 <div>
                   <h1 className="text-white font-bold text-xl">Cursos</h1>
-
-                
                 </div>
               </Link>
             </li>
 
             <li>
               <Link href={"/encontros"} className="flex items-center gap-1">
-                
-
                 <div>
-                  <h1 className="text-white font-bold text-xl">Encontros Universitários</h1>
-
-                  
+                  <h1 className="text-white font-bold text-xl">
+                    Encontros Universitários
+                  </h1>
                 </div>
               </Link>
             </li>
 
             <li>
               <Link href={"/palestras"} className="flex items-center gap-1">
-                
-
                 <div>
                   <h1 className="text-white font-bold text-xl">Palestras</h1>
-
-                  
                 </div>
               </Link>
             </li>
-
-            
-
-            
           </ul>
         </section>
 
         <section
           id="projetos"
-          className=" md:px-0 px-2 mt-5 h-full text-white flex flex-col items-center justify-center gap-3"
+          className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
         >
           <h1 className=" text-4xl font-bold">Projetos</h1>
 
@@ -321,7 +337,7 @@ export default function Home() {
 
         <section
           id="contatos"
-          className="md:px-0 px-2 mt-5 text-white flex flex-col items-center justify-center gap-3"
+          className="scroll-mt-24 md:px-0 px-2 h-full text-white flex flex-col items-center justify-center gap-5"
         >
           <h1 className="text-4xl font-bold">contatos</h1>
 
