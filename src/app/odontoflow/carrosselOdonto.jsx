@@ -7,7 +7,18 @@ import "swiper/css/autoplay";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
-const imagens = ["/odontoflow/login.jpeg"];
+const imagens = [
+  "/odontoflow/login.jpeg",
+  "/odontoflow/1.png",
+  "/odontoflow/2.png",
+  "/odontoflow/3.png",
+  "/odontoflow/4.png",
+  "/odontoflow/5.png",
+  "/odontoflow/6.png",
+  "/odontoflow/7.png",
+  "/odontoflow/8.png",
+  "/odontoflow/9.png",
+];
 
 export default function CarrosselOdonto() {
   const [imagemAmpliada, setImagemAmpliada] = useState(null);
