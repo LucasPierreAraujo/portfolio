@@ -7,7 +7,18 @@ import "swiper/css/autoplay";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
-const imagens = ["/workhub/login.png", "/workhub/cadastro1.jpeg"];
+const imagens = [
+  "/workhub/1.jpeg", 
+  "/workhub/2.jpeg",
+  "/workhub/3.jpeg",
+  "/workhub/4.jpeg",
+  "/workhub/5.jpeg",
+  "/workhub/6.jpeg",
+  "/workhub/7.jpeg",
+  "/workhub/8.jpeg",
+  "/workhub/9.jpeg",
+  "/workhub/10.jpeg",
+];
 
 export default function CarrosselWork() {
   const [imagemAmpliada, setImagemAmpliada] = useState(null);

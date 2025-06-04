@@ -37,7 +37,7 @@
           </button>
 
           <nav
-            className={`flex-col md:flex-row md:flex md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-black bg-opacity-90 md:bg-transparent transition-[max-height] duration-300 overflow-hidden md:overflow-visible ${
+            className={`flex-col md:flex-row md:flex md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-black bg-opacity-90 md:bg-transparent transition-[max-height] gap-2 duration-300 overflow-hidden md:overflow-visible ${
               menuOpen ? "max-h-96" : "max-h-0"
             } md:max-h-full`}
           >
